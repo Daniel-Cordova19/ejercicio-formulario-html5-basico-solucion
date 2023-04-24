@@ -11,15 +11,40 @@
 </head>
 
 <body class="container">
-    <form method="post" action="">
+    <form method="post" action="https://singulars2023.free.beeceptor.com/">
+
+        <h1>Escriba una palabra en el cuadro</h1>
 
         <fieldset>
 
-            <label for="nombre">Nombre: </label>
-            <input type="text" required maxlength="50" placeholder="Óscar" name="nombre" id="nombre" required>
+            <label for="nombre"></label>
+            <input type="text"  maxlength="50" placeholder="Nombre" name="nombre" id="nombre" required>
         </fieldset>
 
-        <input type="submit" class="submit" id="submit" value="Enviar" />
+       
+            <fieldset>
+                <label for="edad"></label>
+                <input type="number"  maxlength="50" placeholder="edad" name="edad" id="edad" min="18" max="99" required >
+            </fieldset>
+        
+
+            <fieldset>
+                <label for="dni"></label>
+                <input type="text"  placeholder="DNI" name="dni" id="dni" maxlength="9" required >
+            </fieldset>
+
+            <fieldset>
+                <label for="ciudadOrigen"></label>
+                <input type="text"  placeholder="Ciudad de Origen" name="ciudadOrigen" id="ciudadOrigen" maxlength="9" required >
+            </fieldset>
+
+<fieldset>
+                <label for="ciudadOrigen"></label>
+                <input type="text"  placeholder="Ciudad de Origen" name="ciudadOrigen" id="ciudadOrigen" maxlength="9" required >
+            </fieldset>
+
+        <label for="submit"></label>
+        <input type="submit" class="submit" id="submit" value="Enviar "  />
 
     </form>
 </body>
