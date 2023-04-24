@@ -15,36 +15,36 @@
 
         <h1>Escriba una palabra en el cuadro</h1>
 
-        <fieldset>
+        
 
             <label for="nombre"></label>
             <input type="text"  maxlength="50" placeholder="Nombre" name="nombre" id="nombre" required>
-        </fieldset>
-
-       
-            <fieldset>
-                <label for="edad"></label>
-                <input type="number"  maxlength="50" placeholder="edad" name="edad" id="edad" min="18" max="99" required >
-            </fieldset>
         
 
-            <fieldset>
+       
+           
+                <label for="edad"></label>
+                <input type="number"  maxlength="50" placeholder="edad" name="edad" id="edad" min="18" max="99" required >
+            
+        
+
+            
                 <label for="dni"></label>
                 <input type="text"  placeholder="DNI" name="dni" id="dni" maxlength="9" required >
-            </fieldset>
-
-            <fieldset>
+         
                 <label for="ciudadOrigen"></label>
                 <input type="text"  placeholder="Ciudad de Origen" name="ciudadOrigen" id="ciudadOrigen" maxlength="9" required >
-            </fieldset>
+            
+            <label for="modo-estudio">Medio de Transporte </label>
+            <select id="modo-estudio" name="modo-estudio" required>
+                <option value="a-pie">A pie</option>
+                <option value="transporte-publico" selected>Transporte público</option>
+                <option value="transporte-privado">Transporte privado</option>
+            </select>
+            <label for="objetivos">Objetivos del curso </label>
+            <textarea id="objetivos" maxlength="1024" rows="4" cols="30" name="Objetivosdelcurso" id="Objetivos"></textarea>
 
-<fieldset>
-                <label for="ciudadOrigen"></label>
-                <input type="text"  placeholder="Ciudad de Origen" name="ciudadOrigen" id="ciudadOrigen" maxlength="9" required >
-            </fieldset>
-
-        <label for="submit"></label>
-        <input type="submit" class="submit" id="submit" value="Enviar "  />
+            <input type="submit" class="submit" id="submit" value="Enviar" />
 
     </form>
 </body>
