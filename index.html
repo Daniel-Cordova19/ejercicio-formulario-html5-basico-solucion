@@ -5,48 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css%22%3E
 
     <title>Formulario básico HTML5</title>
 </head>
 
 <body class="container">
-    <form method="post" action="https://singulars2023.free.beeceptor.com/">
+    <form method="post" action="https://singulars2023.free.beeceptor.com%22%3E/
 
-        <h1>Escriba una palabra en el cuadro</h1>
+        <h1>FORMULARIO </h1>
 
-        
+        <fieldset>
 
-            <label for="nombre"></label>
-            <input type="text"  maxlength="50" placeholder="Nombre" name="nombre" id="nombre" required>
-        
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text" maxlength="50" placeholder="Óscar" name="nombre" required>
 
-       
-           
-                <label for="edad"></label>
-                <input type="number"  maxlength="50" placeholder="edad" name="edad" id="edad" min="18" max="99" required >
-            
-        
+            <label for="edad">Edad: </label>
+            <input id="edad" name="edad" type="number" min="18" max="99" placeholder="24" required>
 
-            
-                <label for="dni"></label>
-                <input type="text"  placeholder="DNI" name="dni" id="dni" maxlength="9" required >
-         
-                <label for="ciudadOrigen"></label>
-                <input type="text"  placeholder="Ciudad de Origen" name="ciudadOrigen" id="ciudadOrigen" maxlength="9" required >
-            
-            <label for="modo-estudio">Medio de Transporte </label>
+            <label for="Dni">Dni: </label>
+            <input type="text" id="dni" placeholder="000000000X" name="dni" pattern="[A-Z]?[0-9]{8}[A-Z]" required>
+
+            <label for="Ciudad">Ciudad de origen </label>
+            <input type="text" required maxlength="100" placeholder="Barcelona" name="Ciudad " id="Ciudad" required>
+            <label for="modo-estudio">Como vienes a estudiar </label>
             <select id="modo-estudio" name="modo-estudio" required>
                 <option value="a-pie">A pie</option>
                 <option value="transporte-publico" selected>Transporte público</option>
                 <option value="transporte-privado">Transporte privado</option>
             </select>
             <label for="objetivos">Objetivos del curso </label>
-            <textarea id="objetivos" maxlength="1024" rows="4" cols="30" name="Objetivosdelcurso" id="Objetivos"></textarea>
+            <textarea id="objetivos" maxlength="1024" rows="4" cols="30" name="Objetivosdelcurso" id="Objetivos">
+            </textarea>
 
             <input type="submit" class="submit" id="submit" value="Enviar" />
 
     </form>
+    <script>
+        document.querySelector('#edad').addEventListener('change', function (event){
+                console.log('Edad:' , event.target.value);
+        });
+
+        document.querySelector('#ciudad').addEventListener('change', function (event){
+            console.log()
+        })
+
+
+    </script>
 </body>
 
 </html>
+
+
